@@ -8,22 +8,20 @@ function App() {
         <h1>This is the Header</h1>
       </header>
       <body>
-        <p>
-          <lh>
-            <h2>Contents:</h2>
-          </lh>
-          <ul>
-            <li>
-              Profile Picture
-            </li>
-            <li>
-              Summary
-            </li>
-            <li>
-              Contact info
-            </li>
-          </ul>
-        </p>
+        <lh>
+          <h2>Contents:</h2>
+        </lh>
+        <ul>
+          <li>
+            Profile Picture
+          </li>
+          <li>
+            Summary
+          </li>
+          <li>
+            Contact info
+          </li>
+        </ul>
       </body>
     </div>
   );
