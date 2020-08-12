@@ -4,3 +4,19 @@
     background-image: url(./images/binary-wallpaper.jpg);
     background-size: 100%;
 }
+
+.App-Header {
+    margin: auto;
+}
+
+.Title {
+    text-align: center;
+}
+
+.Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: grey;
+    opacity: 0.4;
+}

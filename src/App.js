@@ -9,22 +9,29 @@ function App() {
         <h1>This is the Header</h1>
       </header>
       <body>
-        <div>
-          <lh>
-            <h2>Contents:</h2>
-          </lh>
-          <ul>
-            <li>
-              Profile Picture
-            </li>
-            <li>
-              Summary
-            </li>
-            <li>
-              Contact info
-            </li>
-          </ul>
+        <div className="Title">
+          <h2>Contents:</h2>
+        </div>
+        <div className="Content">
+          <div className="Table">
+            <ul>
+              <li>
+                Profile Picture
+              </li>
+              <li>
+                Summary
+              </li>
+              <li>
+                Contact info
+              </li>
+            </ul>
           </div>
+          <div>
+            <p>
+              You think water moves fast? You should see ice.
+            </p>
+          </div>
+        </div>
       </body>
     </div>
   );
