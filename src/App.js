@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Background from './images/binary-wallpaper.jpeg'
+import './images/binary-wallpaper.jpg'
 
 function App() {
   return (
