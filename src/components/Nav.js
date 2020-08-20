@@ -3,7 +3,7 @@ import React from 'react';
 function Nav() {
     return (
         <nav className="nav">
-          <li><a href="home">Russell Cape</a></li>
+          <li><a href="#">Russell Cape</a></li>
           <li><a href="#">Summary</a></li>
           <li><a href="#">Education</a></li>
           <li><a href="#">Employment</a></li>
