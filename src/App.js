@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
 import './images/binary-wallpaper.jpg'
+import Landing from './components/Landing';
+import Summary from './components/Summary';
+import Education from './components/Education';
+import Employment from './components/Employment';
 
 function App() {
   return (
@@ -21,18 +25,10 @@ function App() {
         </nav>
       </div>
       <div className ="content">
-        <div className="home">
-          <h1>Landing page</h1>        
-        </div>
-        <div className="summary">
-          <h1>Summary Page</h1>
-        </div>
-        <div className="education">
-          <h1>Education</h1>
-        </div>
-        <div className="employment">
-          <h1>Employment</h1>
-        </div>
+        <Landing/>
+        <Summary/>
+        <Education/>
+        <Employment/>
         <div className="projects">
           <h1>Projects</h1>
         </div>
