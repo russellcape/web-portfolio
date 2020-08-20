@@ -5,33 +5,22 @@ import './images/binary-wallpaper.jpg'
 function App() {
   return (
     <div className="App">
-      <header className="App-Header">
-        <h1>This is the Header</h1>
-      </header>
+      <div className="navBar">
+        <ul className="nav">
+          <li><a href="home">Russell Cape</a></li>
+          <li><a href="#">Summary</a></li>
+          <li><a href="#">Educationt</a></li>
+          <li><a href="#">Employment</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">Activies</a></li>
+          <li><a href="#">Volunteering</a></li>
+          <li><a href="#">Contact Info</a></li>
+        </ul>
+      </div>
       <body>
-        <div className="Title">
-          <h2>Contents:</h2>
-        </div>
-        <div className="Content">
-          <div className="Table">
-            <ul>
-              <li>
-                Profile Picture
-              </li>
-              <li>
-                Summary
-              </li>
-              <li>
-                Contact info
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              You think water moves fast? You should see ice.
-            </p>
-          </div>
-        </div>
+        <p>Paragraphs</p>
       </body>
     </div>
   );

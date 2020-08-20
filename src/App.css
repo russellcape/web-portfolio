@@ -1,6 +1,5 @@
 .App {
     display: flex;
-    flex-direction: column;
     background-image: url(./images/binary-wallpaper.jpg);
     background-size: 100%;
 }
@@ -9,15 +8,9 @@
     margin: auto;
 }
 
-.Title {
-    text-align: center;
-}
-
-.Content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: grey;
-    opacity: 0.6;
-    color: black;
+.nav {
+    border: red 1px solid;
+    padding: 2.5em;
+    background-color: #0B1027;
+    margin: 0 0;
 }
