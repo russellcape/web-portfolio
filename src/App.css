@@ -1,16 +1,16 @@
 .App {
     display: flex;
-    background-image: url(./images/binary-wallpaper.jpg);
-    background-size: 100%;
+    /* background-image: url(./images/binary-wallpaper.jpg);
+    background-size: 100%;*/
 }
 
-.App-Header {
-    margin: auto;
-}
-
-.nav {
-    border: red 1px solid;
+.navBar {
     padding: 2.5em;
-    background-color: #0B1027;
     margin: 0 0;
+}
+
+.content {
+    border: red 1px solid;
+    display: flex;
+    flex-direction: column;
 }
