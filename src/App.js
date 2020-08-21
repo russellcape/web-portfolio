@@ -19,6 +19,18 @@ import Awards from './components/Awards';
 import Activities from './components/Activities';
 import Volunteering from './components/Volunteering';
 import ContactInfo from './components/ContactInfo';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faHouseUser,
+  faAddressCard,
+  faUniversity,
+  faBriefcase
+} from '@fortawesome/free-solid-svg-icons'
+
+const homeIcon = <FontAwesomeIcon icon={faHouseUser} />;
+const summaryIcon = <FontAwesomeIcon icon={faAddressCard} />;
+const educationIcon = <FontAwesomeIcon icon={faUniversity} />;
+const employmentIcon = <FontAwesomeIcon icon={faBriefcase} />;
 
 function App() {
   return (
@@ -26,19 +38,19 @@ function App() {
       <Router>
           <ProSidebar>
             <Menu>
-              <MenuItem>
+              <MenuItem icon={homeIcon}>
                 Landing
                 <Link to="/" />
               </MenuItem>
-              <MenuItem>
+              <MenuItem icon={summaryIcon}>
                 Summary
                 <Link to="/summary" />
               </MenuItem>
-              <MenuItem>
+              <MenuItem icon={educationIcon}>
                 Education
                 <Link to="/education" />
               </MenuItem>
-              <MenuItem >
+              <MenuItem icon={employmentIcon}>
                 Employment
                 <Link to="/employment" />
               </MenuItem>
@@ -72,44 +84,44 @@ function App() {
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
 
-          <div className="routes">
-            <Switch>
-              <Route path="/contact">
-                <ContactInfo />
-              </Route>
-              <Route path="/volunteering">
-                <Volunteering />
-              </Route>
-              <Route path="/activities">
-                <Activities />
-              </Route>
-              <Route path="/awards">
-                <Awards />
-              </Route>
-              <Route path="/skills">
-                <Skills />
-              </Route>
-              <Route path="/projects">
-                <Projects />
-              </Route>
-              <Route path="/employment">
-                <Employment />
-              </Route>
-              <Route path="/education">
-                <Education />
-              </Route>
-              <Route path="/summary">
-                <Summary />
-              </Route>
-              <Route path="/">
-                <Landing />
-              </Route>
-            </Switch>
-          </div>
+          <body>
+            <div className="routes">
+              <Switch>
+                <Route path="/contact">
+                  <ContactInfo />
+                </Route>
+                <Route path="/volunteering">
+                  <Volunteering />
+                </Route>
+                <Route path="/activities">
+                  <Activities />
+                </Route>
+                <Route path="/awards">
+                  <Awards />
+                </Route>
+                <Route path="/skills">
+                  <Skills />
+                </Route>
+                <Route path="/projects">
+                  <Projects />
+                </Route>
+                <Route path="/employment">
+                  <Employment />
+                </Route>
+                <Route path="/education">
+                  <Education />
+                </Route>
+                <Route path="/summary">
+                  <Summary />
+                </Route>
+                <Route path="/">
+                  <Landing />
+                </Route>
+              </Switch>
+            </div>
+          </body>
         </Router>
-      <body>
-      </body>
-    </div>
+      </div>
   );
 }
 

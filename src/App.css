@@ -7,3 +7,23 @@
     display: flex;
     flex-direction: column;
 }
+
+.landing {
+    padding-left: 2em;
+}
+
+.summary {
+    padding-left: 2em;
+}
+
+.education {
+    padding-left: 2em;
+}
+
+.projects {
+    padding-left: 2em;
+}
+
+.skills {
+    padding-left: 2em;
+}
