@@ -24,13 +24,21 @@ import {
   faHouseUser,
   faAddressCard,
   faUniversity,
-  faBriefcase
+  faBriefcase,
+  faProjectDiagram,
+  faLayerGroup,faAward, faRoute, faHandsHelping, faAddressBook, faIdCard
 } from '@fortawesome/free-solid-svg-icons'
 
 const homeIcon = <FontAwesomeIcon icon={faHouseUser} />;
-const summaryIcon = <FontAwesomeIcon icon={faAddressCard} />;
+const summaryIcon = <FontAwesomeIcon icon={faAddressBook} />;
 const educationIcon = <FontAwesomeIcon icon={faUniversity} />;
 const employmentIcon = <FontAwesomeIcon icon={faBriefcase} />;
+const projectsIcon = <FontAwesomeIcon icon={faProjectDiagram} />;
+const skillStackIcon = <FontAwesomeIcon icon={faLayerGroup} />;
+const awardsIcon = <FontAwesomeIcon icon={faAward} />;
+const activitiesIcon = <FontAwesomeIcon icon={faRoute} />;
+const volunteeringIcon = <FontAwesomeIcon icon={faHandsHelping} />;
+const contactInfoIcon = <FontAwesomeIcon icon={faIdCard} />;
 
 function App() {
   return (
@@ -54,27 +62,27 @@ function App() {
                 Employment
                 <Link to="/employment" />
               </MenuItem>
-              <MenuItem >
+              <MenuItem icon={projectsIcon}>
                 Projects
                 <Link to="/projects" />
               </MenuItem>
-              <MenuItem >
-                Skills
+              <MenuItem icon={skillStackIcon}>
+                Skill Stack
                 <Link to="/skills" />
               </MenuItem>
-              <MenuItem >
+              <MenuItem icon={awardsIcon}>
                 Awards
                 <Link to="/awards" />
               </MenuItem>
-              <MenuItem >
+              <MenuItem icon={activitiesIcon}>
                 Activities
                 <Link to="/activities" />
               </MenuItem>
-              <MenuItem >
+              <MenuItem icon={volunteeringIcon}>
                 Volunteering
                 <Link to="/volunteering" />
               </MenuItem>
-              <MenuItem >
+              <MenuItem icon={contactInfoIcon}>
                 Contact Info
                 <Link to="/contact" />
               </MenuItem>
