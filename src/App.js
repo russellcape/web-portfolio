@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
 import './images/binary-wallpaper.jpg'
-import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import { 
+  ProSidebar, 
+  Menu, 
+  MenuItem } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import { 
   BrowserRouter as Router,
@@ -22,11 +25,14 @@ import ContactInfo from './components/ContactInfo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faHouseUser,
-  faAddressCard,
   faUniversity,
   faBriefcase,
   faProjectDiagram,
-  faLayerGroup,faAward, faRoute, faHandsHelping, faAddressBook, faIdCard
+  faLayerGroup,faAward, 
+  faRoute, 
+  faHandsHelping, 
+  faAddressBook, 
+  faIdCard
 } from '@fortawesome/free-solid-svg-icons'
 
 const homeIcon = <FontAwesomeIcon icon={faHouseUser} />;
